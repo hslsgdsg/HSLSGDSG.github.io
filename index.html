@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta name="generator" content="Hugo 0.161.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小h资源库</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>小h资源库</title>
+
+<meta name="description" content="记录技术、生活和思考">
+<meta name="author" content="你的名字">
+<link rel="canonical" href="//localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.3ddb4530543100e701efe7de56781ada4154684960b0d3ceacc3a2762f7eff8c.css" integrity="sha256-PdtFMFQxAOcB7&#43;feVnga2kFUaElgsNPOrMOidi9&#43;/4w=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="//localhost:1313/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="//localhost:1313/index.json" title="json">
+<link rel="alternate" hreflang="en" href="//localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+         
+        body {
+            background-image: url('/bg.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.85);
+            z-index: -1;
+        }
+        .dark body::before {
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+
+         
+        .custom-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            display: flex;
+            gap: 2rem;
+        }
+        .left-sidebar {
+            flex: 1;
+        }
+        .main-content {
+            flex: 2.5;
+        }
+        .right-sidebar {
+            flex: 1.2;
+        }
+
+         
+        .card {
+            background: var(--entry);
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+            transition: box-shadow 0.2s;
+        }
+        .card:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+
+         
+        .profile-card {
+            text-align: center;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            border: 3px solid var(--primary);
+        }
+        .profile-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+        .profile-bio {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .social-links a {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            transition: color 0.2s;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: var(--primary);
+        }
+
+         
+        .top-stats {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .stat-badge {
+            background: var(--entry);
+            border-radius: 40px;
+            padding: 0.5rem 1.2rem;
+            border: 1px solid var(--border);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: var(--text);
+        }
+        .stat-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .stat-badge i {
+            color: var(--primary);
+        }
+        .stat-number {
+            font-weight: 700;
+            color: var(--primary);
+            margin-left: 0.3rem;
+        }
+
+         
+        .post-item {
+            background: var(--entry);
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .post-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+        .post-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.3rem;
+        }
+        .post-title a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .post-title a:hover {
+            text-decoration: underline;
+        }
+        .post-meta {
+            color: var(--secondary);
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+        .post-tags {
+            display: inline-block;
+            background: var(--primary-light);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-right: 0.3rem;
+            color: var(--primary-dark);
+        }
+        .read-more {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+         
+        .stats-card h3 {
+            border-left: 4px solid var(--primary);
+            padding-left: 0.6rem;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        .stats-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .stats-card li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed var(--border);
+        }
+        .stats-card li span {
+            font-weight: bold;
+            color: var(--primary);
+        }
+        .stats-card a {
+            color: var(--text);
+            text-decoration: none;
+        }
+        .stats-card a:hover {
+            color: var(--primary);
+        }
+
+         
+        .calendar-table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        .calendar-table th {
+            font-weight: 500;
+            font-size: 0.8rem;
+            padding: 6px 0;
+            color: var(--secondary);
+        }
+        .calendar-table td {
+            padding: 6px 0;
+            font-size: 0.9rem;
+            border-radius: 30px;
+            transition: background 0.2s;
+        }
+        .calendar-today {
+            background: var(--primary);
+            color: white !important;
+            font-weight: bold;
+            border-radius: 30px;
+        }
+        .calendar-month-header {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 1000px) {
+            .custom-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="custom-header">
+    <div class="header-container">
+        <div class="header-left">
+            <a href="/" class="site-title">
+                小h资源库
+            </a>
+        </div>
+        <nav class="header-nav">
+            <a href="/">主页</a>
+            <a href="/archives">归档</a>
+            <a href="/links">友链</a>
+            <a href="/guestbook">留言</a>
+            <a href="/about">我的</a>
+            <a href="/links">链接</a>
+            <button class="search-btn" aria-label="搜索" onclick="toggleSearch()">
+                <i class="fas fa-search"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+
+
+<div id="search-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center;">
+    <div style="background: var(--entry); padding: 2rem; border-radius: 24px; width: 80%; max-width: 500px;">
+        <input type="text" id="search-input" placeholder="搜索文章..." style="width: 100%; padding: 0.8rem; border-radius: 40px; border: 1px solid var(--border); background: var(--bg); color: var(--text);">
+        <button onclick="doSearch()" style="margin-top: 1rem; padding: 0.5rem 1rem;">搜索</button>
+        <button onclick="closeSearch()" style="margin-top: 1rem; padding: 0.5rem 1rem; float: right;">关闭</button>
+    </div>
+</div>
+
+<style>
+ 
+.custom-header {
+    background: var(--entry);
+    border-bottom: 1px solid var(--border);
+    padding: 0.8rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.site-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+}
+.header-nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header-nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+.header-nav a:hover {
+    color: var(--primary);
+}
+.search-btn {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--text);
+    padding: 0;
+}
+.search-btn:hover {
+    color: var(--primary);
+}
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .header-nav {
+        gap: 1rem;
+    }
+}
+</style>
+
+<script>
+    function toggleSearch() {
+        const overlay = document.getElementById('search-overlay');
+        overlay.style.display = 'flex';
+        document.getElementById('search-input').focus();
+    }
+    function closeSearch() {
+        document.getElementById('search-overlay').style.display = 'none';
+    }
+    function doSearch() {
+        const keyword = document.getElementById('search-input').value.trim();
+        if (!keyword) return;
+        
+        window.location.href = '\/search?q=' + encodeURIComponent(keyword);
+    }
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeSearch();
+    });
+</script>
+    <div class="custom-container">
+        
+        <div class="left-sidebar">
+            <div class="card profile-card">
+                <img src="/avatar.jpg" alt="头像" class="avatar">
+                <div class="profile-name">你的名字</div>
+                <div class="profile-bio">记录技术、生活和思考</div>
+                <div class="social-links">
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=1174890338&site=qq&menu=yes" target="_blank">
+                        <i class="fab fa-qq"></i> QQ
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="main-content">
+            
+            <div class="top-stats">
+                <a href="/" class="stat-badge">
+                    <i class="fas fa-home"></i> 主页
+                </a>
+                <a href="/archives" class="stat-badge">
+                    <i class="fas fa-archive"></i> 归档
+                    <span class="stat-number">6</span>
+                </a>
+                <div class="stat-badge">
+                    <i class="fas fa-file-alt"></i> 文章示例
+                    <span class="stat-number">6</span>
+                </div>
+                <div class="stat-badge">
+                    <i class="fas fa-book-open"></i> 博客指南
+                    <span class="stat-number">0</span>
+                </div>
+            </div>
+
+            
+            
+            
+            <div class="post-item">
+                <div class="post-meta">
+                    <time>2026-05-19</time>
+                    
+                </div>
+                <h2 class="post-title"><a href="/posts/hello/">小h</a></h2>
+                <p>这是测试文章
+</p>
+                <a href="/posts/hello/" class="read-more">阅读更多 →</a>
+            </div>
+            
+            <div class="post-item">
+                <div class="post-meta">
+                    <time>0001-01-01</time>
+                    
+                </div>
+                <h2 class="post-title"><a href="/about/">关于我</a></h2>
+                <p>这里介绍你自己，比如：
+姓名：小h 职业：开发者 爱好：编程、写作 GitHub：https://github.com/&hellip; </p>
+                <a href="/about/" class="read-more">阅读更多 →</a>
+            </div>
+            
+            <div class="post-item">
+                <div class="post-meta">
+                    <time>0001-01-01</time>
+                    
+                </div>
+                <h2 class="post-title"><a href="/link/">友链</a></h2>
+                <p>我的朋友 张三 - 前端开发 李四 - 后端架构 申请友链 欢迎交换链接，请发送邮件到 example@example.com。
+</p>
+                <a href="/link/" class="read-more">阅读更多 →</a>
+            </div>
+            
+            <div class="post-item">
+                <div class="post-meta">
+                    <time>0001-01-01</time>
+                    
+                </div>
+                <h2 class="post-title"><a href="/archives/">归档</a></h2>
+                <p>archives</p>
+                <a href="/archives/" class="read-more">阅读更多 →</a>
+            </div>
+            
+            <div class="post-item">
+                <div class="post-meta">
+                    <time>0001-01-01</time>
+                    
+                </div>
+                <h2 class="post-title"><a href="/search/">搜索</a></h2>
+                <p></p>
+                <a href="/search/" class="read-more">阅读更多 →</a>
+            </div>
+            
+            <div class="post-item">
+                <div class="post-meta">
+                    <time>0001-01-01</time>
+                    
+                </div>
+                <h2 class="post-title"><a href="/guestbook/">留言板</a></h2>
+                <p>这里可以放评论区组件（如 giscus、disqus）。或者直接写：
+欢迎留言，可以通过 GitHub Issues 评论。
+</p>
+                <a href="/guestbook/" class="read-more">阅读更多 →</a>
+            </div>
+            
+        </div>
+
+        
+        <div class="right-sidebar">
+            
+            
+            
+            
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+            <div class="card stats-card">
+                <h3>📊 站点统计</h3>
+                <ul>
+                    <li>文章 <span>6</span></li>
+                    <li>分类 <span>0</span></li>
+                    <li>标签 <span>0</span></li>
+                    <li>总字数 <span>172</span> 字</li>
+                    <li>运行时长 <span id="runDays"></span> 天</li>
+                    <li>最后活动 <span id="lastActive"></span> 天前</li>
+                </ul>
+            </div>
+
+            
+            <div class="card stats-card">
+                <h3>📂 归档文章示例</h3>
+                <ul>
+                    
+                    
+                    <li><a href="/archives#2026">2026年</a> <span>1</span></li>
+                    
+                    <li><a href="/archives#0001">0001年</a> <span>5</span></li>
+                    
+                </ul>
+            </div>
+
+            
+            
+            <div class="card stats-card">
+                <h3>📘 博客指南</h3>
+                <ul>
+                    <li>文章 <span>0</span></li>
+                    <li>分类 <span>0</span></li>
+                    <li>标签 <span>0</span></li>
+                </ul>
+            </div>
+
+            
+            <div class="card stats-card">
+                <h3>📅 年月日历</h3>
+                <div id="calendar"></div>
+            </div>
+        </div>
+    </div>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="//localhost:1313/">小h资源库</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+
+    <script>
+        
+        const startDate = new Date('2025-05-19'); 
+        const now = new Date();
+        const runDays = Math.floor((now - startDate) / (1000*3600*24));
+        document.getElementById('runDays').innerText = runDays >= 0 ? runDays : 0;
+
+        const lastPostDateStr = '0001-01-01';
+        if (lastPostDateStr) {
+            const lastPostDate = new Date(lastPostDateStr);
+            if (!isNaN(lastPostDate)) {
+                const daysSinceLast = Math.floor((now - lastPostDate) / (1000*3600*24));
+                document.getElementById('lastActive').innerText = daysSinceLast >= 0 ? daysSinceLast : 0;
+            } else {
+                document.getElementById('lastActive').innerText = '0';
+            }
+        } else {
+            document.getElementById('lastActive').innerText = '0';
+        }
+
+        
+        function renderCalendar() {
+            const nowDate = new Date();
+            const year = nowDate.getFullYear();
+            const month = nowDate.getMonth();
+            const today = nowDate.getDate();
+
+            const firstDay = new Date(year, month, 1);
+            const startWeekday = firstDay.getDay(); 
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+            const monthNames = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
+            let html = `<div class="calendar-month-header">${year}年 ${monthNames[month]}</div>`;
+            html += `<table class="calendar-table"><thead><tr><th>日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th></tr></thead><tbody><tr>`;
+
+            let day = 1;
+            for (let i = 0; i < 6; i++) {
+                html += `<tr>`;
+                for (let j = 0; j < 7; j++) {
+                    if (i === 0 && j < startWeekday) {
+                        html += `<td></td>`;
+                    } else if (day > daysInMonth) {
+                        html += `<td></td>`;
+                    } else {
+                        const isToday = (day === today) ? 'calendar-today' : '';
+                        html += `<td class="${isToday}">${day}</td>`;
+                        day++;
+                    }
+                }
+                html += `</tr>`;
+                if (day > daysInMonth) break;
+            }
+            html += `</tbody></table>`;
+            document.getElementById('calendar').innerHTML = html;
+        }
+        renderCalendar();
+    </script>
+</body>
+</html>

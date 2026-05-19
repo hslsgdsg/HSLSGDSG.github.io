@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>小h资源库</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on 小h资源库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 19 May 2026 08:24:29 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小h</title>
+      <link>//localhost:1313/posts/hello/</link>
+      <pubDate>Tue, 19 May 2026 08:24:29 +0800</pubDate>
+      <guid>//localhost:1313/posts/hello/</guid>
+      <description>&lt;p&gt;这是测试文章&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关于我</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>&lt;p&gt;这里介绍你自己，比如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;姓名：小h&lt;/li&gt;
+&lt;li&gt;职业：开发者&lt;/li&gt;
+&lt;li&gt;爱好：编程、写作&lt;/li&gt;
+&lt;li&gt;GitHub：https://github.com/&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>友链</title>
+      <link>//localhost:1313/link/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/link/</guid>
+      <description>&lt;h2 id=&#34;我的朋友&#34;&gt;我的朋友&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhangsan.com&#34;&gt;张三&lt;/a&gt; - 前端开发&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lisi.com&#34;&gt;李四&lt;/a&gt; - 后端架构&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;申请友链&#34;&gt;申请友链&lt;/h2&gt;
+&lt;p&gt;欢迎交换链接，请发送邮件到 &lt;a href=&#34;mailto:example@example.com&#34;&gt;example@example.com&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>留言板</title>
+      <link>//localhost:1313/guestbook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/guestbook/</guid>
+      <description>&lt;p&gt;这里可以放评论区组件（如 giscus、disqus）。或者直接写：&lt;/p&gt;
+&lt;p&gt;欢迎留言，可以通过 GitHub Issues 评论。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
